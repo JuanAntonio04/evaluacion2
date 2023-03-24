@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"Clases","c":"TablaEnteros","l":"mayorTabla()"},{"p":"Clases","c":"TablaEnteros","l":"posicionTabla(int)"},{"p":"Clases","c":"TablaEnteros","l":"sumaTabla()"}];updateSearchResults();
