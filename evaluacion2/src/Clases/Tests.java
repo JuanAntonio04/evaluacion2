@@ -13,13 +13,17 @@ import org.junit.jupiter.params.provider.CsvSource;
 class Tests {
 
 	TablaEnteros tabla;
-	
+	TablaEnteros tabla2;
+
 	@BeforeEach
 	void Constructor() {
 		
 		Integer numeros[] = {2,3,4};
-
 		tabla = new TablaEnteros(numeros);
+		
+		tabla2 = null;
+		Assertions.assertThrows(IllegalArgumentException.class,() -> tabla2 = new TablaEnteros(null));
+
 	}
 	
 	@Test
