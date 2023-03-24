@@ -3,6 +3,8 @@ package Clases;
 /**
  * Clase Tabla Enteros.
  * 
+ * Comentario en nueva rama.
+ * 
  * @author Juan Antonio Bozada Nieto
  * 
  * @since 24/03/2023
