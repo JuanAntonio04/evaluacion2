@@ -2,6 +2,8 @@ package Clases;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.NoSuchElementException;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -40,6 +42,7 @@ class Tests {
 	void testPosiciones(int numero, int posicionEsperada) {
 		
 		assertEquals(posicionEsperada, tabla.posicionTabla(numero));
+		Assertions.assertThrows(NoSuchElementException.class,() -> tabla.posicionTabla(6));
 		
 	}
 	
