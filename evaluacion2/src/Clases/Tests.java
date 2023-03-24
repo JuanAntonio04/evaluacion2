@@ -2,6 +2,7 @@ package Clases;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,9 +16,10 @@ class Tests {
 	void Constructor() {
 		
 		Integer numeros[] = {2,3,4};
-	//	Integer numeros2[] = new Integer();
 
 		tabla = new TablaEnteros(numeros);
+		tabla2 = null;
+		Assertions.assertThrows(IllegalArgumentException.class,() -> tabla2 = new TablaEnteros(null));
 		
 	}
 	
